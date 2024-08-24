@@ -2,10 +2,10 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
   ],
   prefix: "",
   theme: {
@@ -73,5 +73,24 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
-}
+  plugins: [
+    require("tailwindcss-animate"),
+    function ({ addComponents, theme }) {
+      addComponents({
+        ".nav_link": {
+          padding: "0.8rem", // p-2
+          borderRadius: "0.5rem", // rounded-lg
+          fontSize: "1rem", // text-md
+          [`@media (min-width: ${theme("screens.md")})`]: {
+            fontSize: "1.5rem", // md:text-2xl
+          },
+        },
+        ".custom-button": {
+          "&:hover": {
+            backgroundColor: "#94a3b8", // hover:bg-slate-400
+          },
+        },
+      });
+    },
+  ],
+};
