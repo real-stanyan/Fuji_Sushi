@@ -51,7 +51,7 @@ const Header = () => {
             href="/WhatsOn"
             className={`nav_link ${pathname === "/WhatsOn" && "bg-[#94a3b8]"}`}
           >
-            私たちについて / What's on
+            私たちについて / What&apos;s on
           </Link>
           <Link
             href="/Menu"

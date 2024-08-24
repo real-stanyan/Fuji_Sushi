@@ -13,8 +13,6 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-// import VisuallyHidden for accessibility
-import { VisuallyHidden } from "@reach/visually-hidden";
 
 const FuncBtn = () => {
   return (
