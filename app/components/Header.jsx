@@ -23,7 +23,7 @@ const Header = () => {
   const pathname = usePathname();
 
   return (
-    <div className="relative flex w-[100vw] h-[90px] md:h-[150px] bg-[#222221] text-white">
+    <div className="fixed top-0 left-0 flex w-[100vw] h-[90px] md:h-[150px] text-white">
       {/* logo */}
       <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center h-full gap-1">
         <h1 className="text-2xl md:text-4xl">FUJI SUSHI</h1>
