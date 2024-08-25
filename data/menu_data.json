@@ -1,58 +1,59 @@
 [
   {
     "type": "Fuji Rolls",
+    "icon": "/menu_icons/sushi-roll.png",
     "products": [
       {
         "name": "Salmon Avocado Roll",
-        "price": 12,
+        "price": "12.0",
         "quantity": 8,
         "image": "/menu_images/Fuji_Rolls/Salmon_Avocado_Roll.jpg"
       },
       {
         "name": "Cooked Tuna Avocado Roll",
-        "price": 12,
+        "price": "12.0",
         "quantity": 8,
         "image": "/menu_images/Fuji_Rolls/Cooked_Tuna_Avocado_Roll.jpg"
       },
       {
         "name": "Teriyaki Chicken Avocado Roll",
-        "price": 12,
+        "price": "12.0",
         "quantity": 8,
         "image": "/menu_images/Fuji_Rolls/Teriyaki_Chicken_Avocado_Roll.avif"
       },
       {
         "name": "Chicken Katsu Avocado Roll",
-        "price": 12,
+        "price": "12.0",
         "quantity": 8,
         "image": "/menu_images/Fuji_Rolls/Chicken_Katsu_Avocado_Roll.webp"
       },
       {
         "name": "California Roll",
-        "price": 12,
+        "price": "12.0",
         "quantity": 8,
         "image": "/menu_images/Fuji_Rolls/California_Roll.jpg"
       },
       {
         "name": "Fuji Baked Roll",
-        "price": 14,
+        "price": "14.0",
         "quantity": 8,
         "image": "/menu_images/Fuji_Rolls/Fuji_Baked_Roll.avif"
       },
       {
         "name": "Slice Cheese Chicken Katsu Roll",
-        "price": 14,
+        "price": "14.0",
         "quantity": 8,
-        "image": ""
+        "image": "/menu_images/Fuji_Rolls/Fuji_Baked_Roll.avif"
       },
       {
         "name": "Slice Cheese Teriyaki Chicken Roll",
-        "price": 14,
+        "price": "14.0",
         "quantity": 8,
         "image": "/menu_images/Fuji_Rolls/Slice_Cheese_Chicken_Katsu_Roll.jpg"
       },
       {
         "name": "Veggie Tempura Avocado Roll",
-        "price": 12,
+        "price": "12",
         "quantity": 8,
         "image": "/menu_images/Fuji_Rolls/Veggie_Tempura_Avocado_Roll.webp"
       }
@@ -60,6 +61,7 @@
   },
   {
     "type": "Sashimi",
+    "icon": "/menu_icons/sashimi.png",
     "products": [
       {
         "name": "Salmon Sashimi",
@@ -83,6 +85,7 @@
   },
   {
     "type": "Nigiri Sushi",
+    "icon": "/menu_icons/nigiri.png",
     "products": [
       {
         "name": "Salmon Sushi",
@@ -130,6 +133,7 @@
   },
   {
     "type": "Lunch Rice Bowl",
+    "icon": "/menu_icons/rice-bowl.png",
     "notes": "Only 11:00am ~ 14:30pm",
     "products": [
       {
@@ -157,7 +161,8 @@
     ]
   },
   {
-    "name": "Lunch Bento",
+    "type": "Lunch Bento",
+    "icon": "/menu_icons/bento.png",
     "notes": "Only 11:00am ~ 14:30pm",
     "products": [
       {
@@ -189,6 +194,7 @@
   },
   {
     "type": "ENTREE",
+    "icon": "/menu_icons/corndog.png",
     "products": [
       {
         "name": "Edamame",
@@ -274,6 +280,7 @@
   },
   {
     "type": "Tempura",
+    "icon": "/menu_icons/tempura.png",
     "products": [
       {
         "name": "King Prawn Tempura",
@@ -296,7 +303,8 @@
     ]
   },
   {
-    "name": "Salad",
+    "type": "Salad",
+    "icon": "/menu_icons/salad.png",
     "products": [
       {
         "name": "Green Seaweed Salad",
@@ -332,6 +340,7 @@
   },
   {
     "type": "A La Carte",
+    "icon": "/menu_icons/restaurant.png",
     "products": [
       {
         "name": "Chicken Teriyaki & Rice",
@@ -400,6 +409,7 @@
   },
   {
     "type": "Udon Noodle Soup",
+    "icon": "/menu_icons/ramen.png",
     "products": [
       {
         "name": "Plain Udon",
@@ -425,6 +435,7 @@
   },
   {
     "type": "Stir Fried Noodles",
+    "icon": "/menu_icons/pad-thai.png",
     "products": [
       {
         "name": "Yaki Soba (Chicken)",
@@ -445,6 +456,7 @@
   },
   {
     "type": "Japanese Curry",
+    "icon": "/menu_icons/curry.png",
     "products": [
       {
         "name": "Japanese Curry (Chicken)",
@@ -475,6 +487,7 @@
   },
   {
     "type": "Drink",
+    "icon": "/menu_icons/lemonade.png",
     "products": [
       {
         "name": "Lychee Tea",
@@ -512,6 +525,7 @@
   },
   {
     "type": "Beer",
+    "icon": "/menu_icons/beer.png",
     "products": [
       {
         "name": "Sapporo Draft Beer",
@@ -527,6 +541,7 @@
   },
   {
     "type": "Wine",
+    "icon": "/menu_icons/wine-glass.png",
     "products": [
       {
         "name": "Red/White Glass Wine",
@@ -537,6 +552,7 @@
   },
   {
     "type": "Sake",
+    "icon": "/menu_icons/sake.png",
     "products": [
       {
         "name": "Sake Small (Cold/Hot)",
@@ -551,7 +567,8 @@
     ]
   },
   {
-    "type": "Highball Whisky Based",
+    "type": "Highball Whisky",
+    "icon": "/menu_icons/highball.png",
     "products": [
       {
         "name": "Soba",
@@ -571,7 +588,8 @@
     ]
   },
   {
-    "type": "Japanese Style Cocktail",
+    "type": "Cocktail",
+    "icon": "/menu_icons/martini.png",
     "products": [
       {
         "name": "Lemon",
@@ -587,6 +605,7 @@
   },
   {
     "type": "Dessert",
+    "icon": "/menu_icons/cake.png",
     "products": [
       {
         "name": "Daifuku",
