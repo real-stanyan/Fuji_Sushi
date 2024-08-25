@@ -1,0 +1,603 @@
+[
+  {
+    "type": "Fuji Rolls",
+    "products": [
+      {
+        "name": "Salmon Avocado Roll",
+        "price": 12,
+        "quantity": 8,
+        "image": "/menu_images/Fuji_Rolls/Salmon_Avocado_Roll.jpg"
+      },
+      {
+        "name": "Cooked Tuna Avocado Roll",
+        "price": 12,
+        "quantity": 8,
+        "image": "/menu_images/Fuji_Rolls/Cooked_Tuna_Avocado_Roll.jpg"
+      },
+      {
+        "name": "Teriyaki Chicken Avocado Roll",
+        "price": 12,
+        "quantity": 8,
+        "image": "/menu_images/Fuji_Rolls/Teriyaki_Chicken_Avocado_Roll.avif"
+      },
+      {
+        "name": "Chicken Katsu Avocado Roll",
+        "price": 12,
+        "quantity": 8,
+        "image": "/menu_images/Fuji_Rolls/Chicken_Katsu_Avocado_Roll.webp"
+      },
+      {
+        "name": "California Roll",
+        "price": 12,
+        "quantity": 8,
+        "image": "/menu_images/Fuji_Rolls/California_Roll.jpg"
+      },
+      {
+        "name": "Fuji Baked Roll",
+        "price": 14,
+        "quantity": 8,
+        "image": "/menu_images/Fuji_Rolls/Fuji_Baked_Roll.avif"
+      },
+      {
+        "name": "Slice Cheese Chicken Katsu Roll",
+        "price": 14,
+        "quantity": 8,
+        "image": ""
+      },
+      {
+        "name": "Slice Cheese Teriyaki Chicken Roll",
+        "price": 14,
+        "quantity": 8,
+        "image": "/menu_images/Fuji_Rolls/Slice_Cheese_Chicken_Katsu_Roll.jpg"
+      },
+      {
+        "name": "Veggie Tempura Avocado Roll",
+        "price": 12,
+        "quantity": 8,
+        "image": "/menu_images/Fuji_Rolls/Veggie_Tempura_Avocado_Roll.webp"
+      }
+    ]
+  },
+  {
+    "type": "Sashimi",
+    "products": [
+      {
+        "name": "Salmon Sashimi",
+        "price": 18,
+        "quantity": 6,
+        "image": "/menu_images/Sashimi/Salmon_Sashimi.jpeg"
+      },
+      {
+        "name": "Tuna Sashimi",
+        "price": 19,
+        "quantity": 6,
+        "image": "/menu_images/Sashimi/Tuna_Sashimi.jpg"
+      },
+      {
+        "name": "Sashimi Entree",
+        "price": 28,
+        "quantity": 12,
+        "image": "/menu_images/Sashimi/Sashimi_Entree.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Nigiri Sushi",
+    "products": [
+      {
+        "name": "Salmon Sushi",
+        "price": 17,
+        "quantity": 6,
+        "image": "/menu_images/Nigiri_Sushi/Salmon_Sushi.webp"
+      },
+      {
+        "name": "Grilled Salmon Sushi",
+        "price": 18,
+        "quantity": 6,
+        "image": "/menu_images/Nigiri_Sushi/Grilled_Salmon_Sushi.jpg"
+      },
+      {
+        "name": "Tuna Sushi",
+        "price": 18,
+        "quantity": 6,
+        "image": "/menu_images/Nigiri_Sushi/Tuna_Sushi.webp"
+      },
+      {
+        "name": "Fuji Mixed Sushi",
+        "price": 27,
+        "quantity": 10,
+        "image": "/menu_images/Nigiri_Sushi/Fuji_Mixed_Sushi.webp"
+      },
+      {
+        "name": "Fuji Sushi & Sashimi Combo",
+        "price": 34,
+        "quantity": 15,
+        "image": "/menu_images/Nigiri_Sushi/Fuji_Sushi&Sashimi_Combo.avif"
+      },
+      {
+        "name": "Scallop Sushi",
+        "price": 19,
+        "quantity": 6,
+        "image": "/menu_images/Nigiri_Sushi/Scallop_Sushi.webp"
+      },
+      {
+        "name": "Grilled Scallop Sushi",
+        "price": 20,
+        "quantity": 6,
+        "image": "/menu_images/Nigiri_Sushi/Grilled_Scallop_Sushi.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Lunch Rice Bowl",
+    "notes": "Only 11:00am ~ 14:30pm",
+    "products": [
+      {
+        "name": "Chicken Karaage Rice Bowl",
+        "price": 15,
+        "image": "/menu_images/Lunch_Rice_Bowl/Chicken_Karaage_Rice_Bowl.jpeg"
+      },
+      {
+        "name": "Chicken Teriyaki Rice Bowl",
+        "price": 15,
+        "image": "/menu_images/Lunch_Rice_Bowl/Chicken_Teriyaki_Rice_Bowl.jpg"
+      },
+      {
+        "name": "Chicken Katsu Donburi",
+        "des": "Crispy Chicken&Egg&Onion with Rice",
+        "price": 15,
+        "image": "/menu_images/Lunch_Rice_Bowl/Chicken_Katsu_Donburi.jpg"
+      },
+      {
+        "name": "Oyako Donburi",
+        "des": "Chicken&Egg&Onion with Rice",
+        "price": 15,
+        "image": "/menu_images/Lunch_Rice_Bowl/Oyako_Donburi.jpg"
+      }
+    ]
+  },
+  {
+    "name": "Lunch Bento",
+    "notes": "Only 11:00am ~ 14:30pm",
+    "products": [
+      {
+        "name": "Teriyaki Chicken Box",
+        "price": 18.5,
+        "image": "/menu_images/Lunch_Bento/Teriyaki_Chicken_Box.jpg"
+      },
+      {
+        "name": "Teriyaki Beef Box",
+        "price": 18.5,
+        "image": "/menu_images/Lunch_Bento/Teriyaki_Beef_Box.jpeg"
+      },
+      {
+        "name": "Chicken Karaage Box",
+        "price": 18.5,
+        "image": "/menu_images/Lunch_Bento/Chicken_Karaage_Box.jpeg"
+      },
+      {
+        "name": "Chicken Katsu Box",
+        "price": 18.5,
+        "image": "/menu_images/Lunch_Bento/Chicken_Katsu_Box.jpeg"
+      },
+      {
+        "name": "Tempura Box",
+        "price": 18.5,
+        "image": "/menu_images/Lunch_Bento/Tempura_Box.jpeg"
+      }
+    ]
+  },
+  {
+    "type": "ENTREE",
+    "products": [
+      {
+        "name": "Edamame",
+        "des": "Fresh steamed Green Beans",
+        "price": 8,
+        "image": "/menu_images/ENTREE/Edamame.jpg"
+      },
+      {
+        "name": "Pan Fried Pork Gyoza",
+        "price": 10,
+        "quantity": 5,
+        "image": "/menu_images/ENTREE/Pan_Fried_Pork_Gyoza.jpeg"
+      },
+      {
+        "name": "Veggie Deep Fried Gyoza",
+        "price": 10,
+        "quantity": 5,
+        "image": "/menu_images/ENTREE/Veggie_Deep_Fried_Gyoza.jpeg"
+      },
+      {
+        "name": "Veggie Pan Fried Gyoza",
+        "price": 10,
+        "quantity": 5,
+        "image": "/menu_images/ENTREE/Veggie_Pan_Fried_Gyoza.jpeg"
+      },
+      {
+        "name": "Prawn Parcels",
+        "des": "Prawns and vegetables, wrapped with crispy wheat pastry",
+        "price": 10,
+        "quantity": 5,
+        "image": "/menu_images/ENTREE/Prawn_Parcels.jpg"
+      },
+      {
+        "name": "Veggie Spring Roll",
+        "des": "Deep fried savory rolls with vegetable fillings inside a thinly wrapped cylindrical pastry",
+        "price": 10,
+        "quantity": 6,
+        "image": "/menu_images/ENTREE/Veggie_Spring_Roll.jpg"
+      },
+      {
+        "name": "Takoyaki",
+        "des": "Octopus balls with mayo and takoyaki sauce",
+        "price": 12,
+        "quantity": 6,
+        "image": "/menu_images/ENTREE/Takoyaki.jpg"
+      },
+      {
+        "name": "Vegetable Okonomiyaki",
+        "des": "Japanese savory pancake with Mayo and Okonomiyaki sauce",
+        "price": 15,
+        "image": "/menu_images/ENTREE/Vegetable_Okonomiyaki.jpg"
+      },
+      {
+        "name": "Spinach with Sesame",
+        "price": 9,
+        "image": "/menu_images/ENTREE/Spinach_with_Sesame.jpg"
+      },
+      {
+        "name": "Agedashi Tofu",
+        "des": "Deep fried Tofu Tendashi sauce",
+        "price": 10,
+        "image": "/menu_images/ENTREE/Agedashi_Tofu.jpg"
+      },
+      {
+        "name": "Chicken Karaage",
+        "des": "Deep fried chicken with mayo and teriyaki sauce",
+        "price": 14,
+        "image": "/menu_images/ENTREE/Chicken_Karaage.jpg"
+      },
+      {
+        "name": "Soy Fried Chicken Wing",
+        "price": 16,
+        "quantity": 8,
+        "image": "/menu_images/ENTREE/Soy_Fried_Chicken_Wing.webp"
+      },
+      {
+        "name": "Wagyu Beef Tataki",
+        "des": "Seared wagyu beef with ponzu sauce and red onion",
+        "price": 16,
+        "image": "/menu_images/ENTREE/Wagyu_Beef_Tataki.avif"
+      }
+    ]
+  },
+  {
+    "type": "Tempura",
+    "products": [
+      {
+        "name": "King Prawn Tempura",
+        "price": 16,
+        "quantity": 4,
+        "image": "/menu_images/Tempura/King_Prawn_Tempura.jpeg"
+      },
+      {
+        "name": "Vegetable Tempura",
+        "price": 16,
+        "quantity": 6,
+        "image": "/menu_images/Tempura/Vegetable_Tempura.jpeg"
+      },
+      {
+        "name": "Assorted Tempura",
+        "price": 26,
+        "quantity": 9,
+        "image": "/menu_images/Tempura/Assorted_Tempura.jpeg"
+      }
+    ]
+  },
+  {
+    "name": "Salad",
+    "products": [
+      {
+        "name": "Green Seaweed Salad",
+        "des": "Green Seaweed and cabbage with vineger soy dressing",
+        "price": 14,
+        "image": "/menu_images/Salad/Green_Seaweed_Salad.jpeg"
+      },
+      {
+        "name": "Salmon & Avocado Salad",
+        "des": "Fresh Salmon&Avocado and mixed salad with Sweet lemon ponzu sauce",
+        "price": 17,
+        "image": "/menu_images/Salad/Salmon&Avocado_Salad.jpeg"
+      },
+      {
+        "name": "Chicken Katsu Salad",
+        "des": "Crispy Chicken with Cabbage&Mixed salad with black sesame dressing sauce",
+        "price": 17,
+        "image": "/menu_images/Salad/Chicken_Katsu_Salad.jpeg"
+      },
+      {
+        "name": "Chicken Karaage Salad",
+        "des": "Deep Fried Chicken with Cabbage&Mixed salad with black sesame dressing sauce",
+        "price": 17,
+        "image": "/menu_images/Salad/Chicken_Karaage_Salad.jpeg"
+      },
+      {
+        "name": "Buckwheat Noodle Salad",
+        "des": "Japanese style noodles with green beans, edamame, cucumber, avocado, pickled ginger, and green seaweed salad",
+        "price": 17,
+        "image": "/menu_images/Salad/Buckwheat_Noodle_Salad.jpeg"
+      }
+    ]
+  },
+  {
+    "type": "A La Carte",
+    "products": [
+      {
+        "name": "Chicken Teriyaki & Rice",
+        "des": "Grilled chicken with teriyaki sauce and cabbage, Mixed salad with Black Sesame sauce dressing",
+        "price": 20,
+        "image": "/menu_images/A_La_Carte/Chicken_Teriyaki&Rice.jpeg"
+      },
+      {
+        "name": "Chicken Katsu & Rice",
+        "des": "Fried Chicken Cutlet with soy sauce and cabbage, Mixed salad with Black Sesame sauce dressing",
+        "price": 20,
+        "image": "/menu_images/A_La_Carte/Chicken_Katsu&Rice.jpeg"
+      },
+      {
+        "name": "Salmon Teriyaki & Rice",
+        "des": "Grilled salmon with teriyaki sauce and cabbage, Mixed salad with black sesame sauce dressing",
+        "price": 24,
+        "image": "/menu_images/A_La_Carte/Salmon_Teriyaki&Rice.jpeg"
+      },
+      {
+        "name": "Sizzling Teriyaki Beef & Rice",
+        "des": "Sizzled Teriyaki Beef",
+        "price": 21,
+        "image": "/menu_images/A_La_Carte/Sizzling_Teriyaki_Beef&Rice.jpeg"
+      },
+      {
+        "name": "Sizzling Chilli Pork & Rice",
+        "des": "Marinated pork in spciy chilli sauce",
+        "price": 21,
+        "image": "/menu_images/A_La_Carte/Sizzling_Chilli_Pork&Rice.jpeg"
+      },
+      {
+        "name": "Chicken Karaage Rice Bowl",
+        "price": 18,
+        "image": "/menu_images/A_La_Carte/Chicken_Karaage_Rice_Bowl.webp"
+      },
+      {
+        "name": "Chicken Katsu Donburi",
+        "price": 18,
+        "image": "/menu_images/A_La_Carte/Chicken_Katsu_Donburi.jpeg"
+      },
+      {
+        "name": "Unagi(Eel) Bowl",
+        "price": 21,
+        "image": "/menu_images/A_La_Carte/Unagi_Bowl.jpeg"
+      },
+      {
+        "name": "Fuji Special Bento & Rice & Miso",
+        "des": "1. Teriyaki Chicken / 2. Teriyaki Beef / 3. Chicken Katsu / 4. Chicken Karaage / 5. Tempura",
+        "price": 28,
+        "image": "/menu_images/A_La_Carte/Fuji_Special_Bento&Rice&Miso.jpeg"
+      },
+      {
+        "name": "Wagyu Katsu Sandwich",
+        "des": "Wagyu Chuck Eye Rol With Secret Sauce",
+        "price": 29,
+        "quantity": 4,
+        "image": "/menu_images/A_La_Carte/Wagyu_Katsu_Sandwich.webp"
+      },
+      {
+        "name": "Grilled Salmon Rice",
+        "price": 25,
+        "image": "/menu_images/A_La_Carte/Grilled_Salmon_Rice.jpeg"
+      }
+    ]
+  },
+  {
+    "type": "Udon Noodle Soup",
+    "products": [
+      {
+        "name": "Plain Udon",
+        "price": 14,
+        "image": "/menu_images/Udon_Noodle_Soup/Plain_Udon.jpg"
+      },
+      {
+        "name": "Karaage Udon",
+        "price": 18,
+        "image": "/menu_images/Udon_Noodle_Soup/Karaage_Udon.jpeg"
+      },
+      {
+        "name": "Chicken Katsu Udon",
+        "price": 18,
+        "image": "/menu_images/Udon_Noodle_Soup/Chicken_Katsu_Udon.jpg"
+      },
+      {
+        "name": "Tempura Udon",
+        "price": 19,
+        "image": "/menu_images/Udon_Noodle_Soup/Tempura_Udon.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Stir Fried Noodles",
+    "products": [
+      {
+        "name": "Yaki Soba (Chicken)",
+        "price": 19,
+        "image": "/menu_images/Stir_Fried_Noodles/Yaki_Soba(Chicken).jpg"
+      },
+      {
+        "name": "Yaki Soba (Beef)",
+        "price": 19,
+        "image": "/menu_images/Stir_Fried_Noodles/Yaki_Soba(Chicken).jpg"
+      },
+      {
+        "name": "Yaki Soba (Tofu)",
+        "price": 19,
+        "image": "/menu_images/Stir_Fried_Noodles/Yaki_Soba(Chicken).jpg"
+      }
+    ]
+  },
+  {
+    "type": "Japanese Curry",
+    "products": [
+      {
+        "name": "Japanese Curry (Chicken)",
+        "price": 19,
+        "image": "/menu_images/Japanese_Curry/Japanese_Curry.jpg"
+      },
+      {
+        "name": "Japanese Curry (Karaage)",
+        "price": 19,
+        "image": "/menu_images/Japanese_Curry/Japanese_Curry.jpg"
+      },
+      {
+        "name": "Japanese Curry (Vegetable)",
+        "price": 19,
+        "image": "/menu_images/Japanese_Curry/Japanese_Curry.jpg"
+      },
+      {
+        "name": "Japanese Curry (Chicken Katsu)",
+        "price": 19,
+        "image": "/menu_images/Japanese_Curry/Japanese_Curry.jpg"
+      },
+      {
+        "name": "Japanese Curry (Prawn Katsu)",
+        "price": 19,
+        "image": "/menu_images/Japanese_Curry/Japanese_Curry.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Drink",
+    "products": [
+      {
+        "name": "Lychee Tea",
+        "price": 4,
+        "image": "/menu_images/Drink/Lychee_Tea.webp"
+      },
+      {
+        "name": "Fuij Apple",
+        "des": "Apple Flavoured Sparkiling",
+        "price": 4,
+        "image": "/menu_images/Drink/Fuij_Apple.webp"
+      },
+      {
+        "name": "Calpico",
+        "des": "No•1 Popular Beverage in Japan",
+        "price": 4,
+        "image": "/menu_images/Drink/Calpico.webp"
+      },
+      {
+        "name": "Ramune",
+        "price": 4,
+        "image": "/menu_images/Drink/Ramune.jpg"
+      },
+      {
+        "name": "Cold Green Tea",
+        "price": 4,
+        "image": "/menu_images/Drink/Cold_Green_Tea.webp"
+      },
+      {
+        "name": "Hot Green Tea",
+        "price": 6,
+        "image": "/menu_images/Drink/Hot_Green_Tea.jpeg"
+      }
+    ]
+  },
+  {
+    "type": "Beer",
+    "products": [
+      {
+        "name": "Sapporo Draft Beer",
+        "price": 12,
+        "image": "/menu_images/Beer/Sapporo_Draft_Beer.webp"
+      },
+      {
+        "name": "Asahi (Bottle)",
+        "price": 9,
+        "image": "/menu_images/Beer/Asahi.webp"
+      }
+    ]
+  },
+  {
+    "type": "Wine",
+    "products": [
+      {
+        "name": "Red/White Glass Wine",
+        "price": 9,
+        "images": "/menu_images/Wine/Wine.jpeg"
+      }
+    ]
+  },
+  {
+    "type": "Sake",
+    "products": [
+      {
+        "name": "Sake Small (Cold/Hot)",
+        "price": 13,
+        "image": "/menu_images/Sake/Sake.webp"
+      },
+      {
+        "name": "Sake Large (Cold/Hot)",
+        "price": 18,
+        "image": "/menu_images/Sake/Sake.webp"
+      }
+    ]
+  },
+  {
+    "type": "Highball Whisky Based",
+    "products": [
+      {
+        "name": "Soba",
+        "price": 13,
+        "image": "/menu_images/Highball_Whisky_Based/Highball_Whisky_Based.webp"
+      },
+      {
+        "name": "lemon",
+        "price": 13,
+        "image": "/menu_images/Highball_Whisky_Based/Highball_Whisky_Based.webp"
+      },
+      {
+        "name": "Coke",
+        "price": 13,
+        "image": "/menu_images/Highball_Whisky_Based/Highball_Whisky_Based.webp"
+      }
+    ]
+  },
+  {
+    "type": "Japanese Style Cocktail",
+    "products": [
+      {
+        "name": "Lemon",
+        "price": 13,
+        "image": "/menu_images/Japanese_Style_Cocktail/Japanese_Style_Cocktail.jpg"
+      },
+      {
+        "name": "Lychee",
+        "price": 13,
+        "image": "/menu_images/Japanese_Style_Cocktail/Japanese_Style_Cocktail.jpg"
+      }
+    ]
+  },
+  {
+    "type": "Dessert",
+    "products": [
+      {
+        "name": "Daifuku",
+        "price": 6,
+        "image": "/menu_images/Dessert/Daifuku.jpeg"
+      },
+      {
+        "name": "Ice Cream",
+        "price": 7,
+        "image": "/menu_images/Dessert/Ice Cream.jpeg"
+      }
+    ]
+  }
+]
