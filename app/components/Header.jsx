@@ -14,17 +14,41 @@ import {
   DrawerTrigger,
 } from "@/components/ui/drawer";
 import { VisuallyHidden } from "@reach/visually-hidden";
-import { useState } from "react"; // Import useState
+import { useState, useEffect } from "react"; // Import useState and useEffect
 
 const Header = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false); // State to manage Drawer
+  const [headerBg, setHeaderBg] = useState("transparent"); // State to manage Header background color
 
   const toggleDrawer = () => setIsOpen(!isOpen);
   const closeDrawer = () => setIsOpen(false); // Function to close Drawer
 
+  // Effect to handle background color change on scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setHeaderBg("#cd1d19"); // Change to red after scrolling down
+      } else {
+        setHeaderBg("transparent"); // Default background color
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className="fixed top-0 left-0 flex w-[100vw] h-[90px] md:h-[150px] text-white z-50">
+    <div
+      className={`fixed top-0 left-0 flex w-[100vw] h-[90px] md:h-[150px] text-white z-50`}
+      style={{
+        backgroundColor: headerBg, // Apply dynamic background color
+        transition: "background-color 0.3s ease", // Add transition effect
+      }}
+    >
       {/* logo */}
       <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center h-full gap-1">
         <h1 className="text-2xl md:text-4xl">FUJI SUSHI</h1>
