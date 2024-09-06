@@ -17,7 +17,7 @@ import {
 } from "@/components/ui/drawer";
 
 const FuncBtn = () => {
-  const phoneNumber = "+61405155473";
+  const phoneNumber = "+61755317368";
   const mapLink =
     "https://www.google.com/maps/place/Fuji+Sushi/@-28.005352,153.4265499,17z/data=!3m2!4b1!5s0x6b91050d17cd4e6f:0xd7343a174a5c24fd!4m6!3m5!1s0x6b91054ba6923571:0x4f26498b1d0603e4!8m2!3d-28.005352!4d153.4291248!16s%2Fg%2F11j0j036j4?entry=ttu&g_ep=EgoyMDI0MDkwMy4wIKXMDSoASAFQAw%3D%3D";
 

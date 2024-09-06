@@ -29,7 +29,7 @@ const Header = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 0) {
-        setHeaderBg("#cd1d19"); // Change to red after scrolling down
+        setHeaderBg("#000"); // Change to red after scrolling down
       } else {
         setHeaderBg("transparent"); // Default background color
       }
