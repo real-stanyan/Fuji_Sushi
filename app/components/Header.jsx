@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { RiMenu3Fill } from "react-icons/ri";
 import {
@@ -43,18 +44,30 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 flex w-[100vw] h-[90px] md:h-[150px] text-white z-50`}
+      className={`fixed top-0 left-0 flex items-center justify-between w-[100vw] h-[90px] md:h-[150px] text-white z-50`}
       style={{
         backgroundColor: headerBg, // Apply dynamic background color
         transition: "background-color 0.3s ease", // Add transition effect
       }}
     >
-      {/* logo */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center h-full gap-1">
+      {/* Left-aligned logo image */}
+      <div className="relative w-[200px] h-[120px] md:w-[300px] md:h-[180px]">
+        <Image
+          src="/images/logo.png"
+          alt="logo"
+          fill
+          priority
+          className="object-contain"
+        />
+      </div>
+
+      {/* Centered logo text */}
+      <div className="flex-grow absolute left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center h-full gap-1">
         <h1 className="text-2xl md:text-4xl">FUJI SUSHI</h1>
         <p className="text-xs md:text-sm">JAPANESE DINING</p>
       </div>
-      {/* menu icon */}
+
+      {/* Right-aligned menu icon */}
       <Drawer open={isOpen} onOpenChange={setIsOpen}>
         <DrawerTrigger
           className="ml-auto pr-4 flex items-center"
