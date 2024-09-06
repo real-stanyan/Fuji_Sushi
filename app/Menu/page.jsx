@@ -23,7 +23,7 @@ const Menu = () => {
               key={i}
               className={`flex-1 flex flex-col items-center justify-center text-lg w-[120px] gap-1 ${
                 currentPage === item.type && "bg-white"
-              } bg-opacity-20 rounded-2xl overflow-hidden p-2`}
+              } bg-opacity-20 rounded-2xl overflow-hidden p-2 md:hover:bg-white md:hover:bg-opacity-15`}
               onClick={() => setCurrentPage(item.type)}
             >
               <Image
