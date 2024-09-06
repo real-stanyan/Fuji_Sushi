@@ -9,6 +9,10 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      JosefinSans: ["var(--font-josefin-sans)"],
+      BebasNeue: ["var(--font-bebas-neue)"],
+    },
     container: {
       center: true,
       padding: "2rem",

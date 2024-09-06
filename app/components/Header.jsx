@@ -44,74 +44,87 @@ const Header = () => {
 
   return (
     <div
-      className={`fixed top-0 left-0 flex items-center justify-between w-[100vw] h-[90px] md:h-[150px] text-white z-50`}
+      className={`fixed top-0 left-0 grid w-full h-[90px] md:h-[120px] text-white z-50 px-4`}
       style={{
         backgroundColor: headerBg, // Apply dynamic background color
         transition: "background-color 0.3s ease", // Add transition effect
+        gridTemplateColumns: "1fr auto 1fr", // 定义三列布局
       }}
     >
       {/* Left-aligned logo image */}
-      <div className="relative w-[200px] h-[120px] md:w-[300px] md:h-[180px]">
-        <Image
-          src="/images/logo.png"
-          alt="logo"
-          fill
-          priority
-          className="object-contain"
-        />
-      </div>
+      <Link href="/" className="flex items-center justify-start">
+        <div className="relative w-[80px] h-[48px] md:w-[150px] md:h-[90px]">
+          <Image
+            src="/images/logo.png"
+            alt="logo"
+            layout="fill"
+            objectFit="contain"
+            priority
+          />
+        </div>
+      </Link>
 
       {/* Centered logo text */}
-      <div className="flex-grow absolute left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center h-full gap-1">
-        <h1 className="text-2xl md:text-4xl">FUJI SUSHI</h1>
-        <p className="text-xs md:text-sm">JAPANESE DINING</p>
-      </div>
+      <Link
+        href="/"
+        className="flex flex-col justify-center items-center h-full place-self-center overflow-hidden"
+      >
+        <h1 className="text-2xl md:text-4xl overflow-hidden font-JosefinSans">
+          FUJI SUSHI
+        </h1>
+        <p className="text-xs md:text-sm tracking-wider font-BebasNeue">
+          JAPANESE DINING
+        </p>
+      </Link>
 
       {/* Right-aligned menu icon */}
-      <Drawer open={isOpen} onOpenChange={setIsOpen}>
-        <DrawerTrigger
-          className="ml-auto pr-4 flex items-center"
-          onClick={toggleDrawer}
-        >
-          <RiMenu3Fill className="text-[30px] md:text-[50px]" />
-        </DrawerTrigger>
-        <DrawerContent
-          side="right"
-          className="flex flex-col justify-evenly items-center w-[100vw] h-[40vh]"
-        >
-          <VisuallyHidden>
-            <DrawerTitle>Navigation Menu</DrawerTitle>
-          </VisuallyHidden>
-          <Link
-            href="/"
-            className={`nav_link ${pathname === "/" && "bg-[#94a3b8]"}`}
-            onClick={closeDrawer} // Close drawer on link click
+      <div className="flex items-center justify-end">
+        <Drawer open={isOpen} onOpenChange={setIsOpen}>
+          <DrawerTrigger className="flex items-center" onClick={toggleDrawer}>
+            <RiMenu3Fill className="text-[30px] md:text-[50px]" />
+          </DrawerTrigger>
+          <DrawerContent
+            side="right"
+            className="flex flex-col justify-evenly items-center w-[100vw] h-[40vh]"
           >
-            主页 / HOME
-          </Link>
-          <Link
-            href="/WhatsOn"
-            className={`nav_link ${pathname === "/WhatsOn" && "bg-[#94a3b8]"}`}
-            onClick={closeDrawer} // Close drawer on link click
-          >
-            私たちについて / What&apos;s on
-          </Link>
-          <Link
-            href="/Menu"
-            className={`nav_link ${pathname === "/Menu" && "bg-[#94a3b8]"}`}
-            onClick={closeDrawer} // Close drawer on link click
-          >
-            メニュー / Menu
-          </Link>
-          <Link
-            href="/Booking"
-            className={`nav_link ${pathname === "/Booking" && "bg-[#94a3b8]"}`}
-            onClick={closeDrawer} // Close drawer on link click
-          >
-            予約 / Booking
-          </Link>
-        </DrawerContent>
-      </Drawer>
+            <VisuallyHidden>
+              <DrawerTitle>Navigation Menu</DrawerTitle>
+            </VisuallyHidden>
+            <Link
+              href="/"
+              className={`nav_link ${pathname === "/" && "bg-[#94a3b8]"}`}
+              onClick={closeDrawer} // Close drawer on link click
+            >
+              主页 / HOME
+            </Link>
+            <Link
+              href="/WhatsOn"
+              className={`nav_link ${
+                pathname === "/WhatsOn" && "bg-[#94a3b8]"
+              }`}
+              onClick={closeDrawer} // Close drawer on link click
+            >
+              私たちについて / What&apos;s on
+            </Link>
+            <Link
+              href="/Menu"
+              className={`nav_link ${pathname === "/Menu" && "bg-[#94a3b8]"}`}
+              onClick={closeDrawer} // Close drawer on link click
+            >
+              メニュー / Menu
+            </Link>
+            <Link
+              href="/Booking"
+              className={`nav_link ${
+                pathname === "/Booking" && "bg-[#94a3b8]"
+              }`}
+              onClick={closeDrawer} // Close drawer on link click
+            >
+              予約 / Booking
+            </Link>
+          </DrawerContent>
+        </Drawer>
+      </div>
     </div>
   );
 };
