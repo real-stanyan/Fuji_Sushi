@@ -35,7 +35,7 @@ const Card = ({ image, name, price, quantity = 0, des = "", dataUrl }) => {
   }
 
   return (
-    <div className="relative rounded-xl overflow-hidden">
+    <div className="relative rounded-xl overflow-hidden font-pwc">
       <Image
         src={data ? data.image : image} // 使用加载的数据或传入的image作为后备
         alt={data ? data.name : name}
@@ -45,7 +45,7 @@ const Card = ({ image, name, price, quantity = 0, des = "", dataUrl }) => {
         className="w-full h-full"
       />
       <div className="flex justify-between items-center absolute left-0 bottom-0 w-full h-[60px] md:h-[100px] bg-black bg-opacity-50 text-white p-2">
-        <div className="font-semibold text-xl">{data ? data.name : name}</div>
+        <div className="text-xl font-pwc">{data ? data.name : name}</div>
         <div className="flex flex-col justify-center items-center">
           <div className="whitespace-nowrap">$ {data ? data.price : price}</div>
           {data && data.quantity > 0 && (

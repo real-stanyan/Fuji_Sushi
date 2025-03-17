@@ -92,3 +92,10 @@
 ::-webkit-scrollbar-thumb:hover {
   background-color: #e0e0e0; /* 滚动条悬停时颜色 */
 }
+
+@font-face {
+  font-family: "PWC";
+  src: url("/fonts/Painting_With_Chocolate.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

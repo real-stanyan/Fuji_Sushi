@@ -21,8 +21,11 @@ module.exports = {
       },
     },
     extend: {
+      fontFamily: {
+        pwc: ["PWC", "sans-serif"],
+      },
       backgroundImage: {
-        "home-bg-mobile": "url('/images/home_bg_mobile.jpg')",
+        "home-bg": "url('/bgImages/home_bg.webp')",
       },
       colors: {
         border: "hsl(var(--border))",
