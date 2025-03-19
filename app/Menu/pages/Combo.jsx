@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Combo = () => {
   return (
-    <div className="w-[100vw] flex flex-col items-center pt">
+    <div className="w-[100vw] flex flex-col items-center">
       <Image
         src="/menu_title/combo.webp"
         width={1000}

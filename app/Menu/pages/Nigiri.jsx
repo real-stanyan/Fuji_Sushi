@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Nigiri = () => {
   return (
-    <div className="flex flex-col items-center pt">
+    <div className="flex flex-col items-center">
       <Image
         src="/menu_title/nigiri.webp"
         width={1000}

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Sashimi = () => {
   return (
-    <div className="flex flex-col items-center pt">
+    <div className="flex flex-col items-center">
       <Image
         src="/menu_title/sashimi.webp"
         width={1000}
