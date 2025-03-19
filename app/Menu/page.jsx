@@ -5,7 +5,7 @@ import Combo from "./pages/Combo";
 const Menu = () => {
   return (
     <div className="bg-menu-bg object-cover pt-[90px] md:pt-[120px] w-[100vw] min-h-[100vh]">
-      <Nigiri />
+      <Combo />
     </div>
   );
 };
