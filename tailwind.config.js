@@ -26,6 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         "home-bg": "url('/bgImages/home_bg.webp')",
+        "menu-bg": "url('/menu_images/bg.webp')",
       },
       colors: {
         border: "hsl(var(--border))",
