@@ -13,7 +13,7 @@ export default function Home() {
   useGSAP(() => {
     gsap.to(imageRef.current, {
       opacity: 0,
-      duration: 1,
+      duration: 2,
       ease: "power2.out",
       onComplete: () => {
         gsap.set(imageRef.current, { zIndex: 0 });

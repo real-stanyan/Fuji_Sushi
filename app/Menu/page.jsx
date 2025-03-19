@@ -12,6 +12,7 @@ import FriedDishes from "./pages/FriedDishes";
 import Salad from "./pages/Salad";
 import MainDishes from "./pages/MainDishes";
 import Noodle from "./pages/Noodle";
+import DrinkMenu from "./pages/DrinkMenu";
 
 const Menu = () => {
   const pages = [
@@ -24,6 +25,7 @@ const Menu = () => {
     <Salad key="salad" />,
     <MainDishes key="mainDishes" />,
     <Noodle key="noodle" />,
+    <DrinkMenu key="drinkMenu" />,
   ];
 
   const [current, setCurrent] = useState(0);
@@ -46,9 +48,9 @@ const Menu = () => {
   return (
     <div
       {...handlers}
-      className="bg-menu-bg object-cover pt-[90px] md:pt-[150px] w-[100vw] min-h-[100vh]"
+      className="bg-menu-bg object-cover pt-[90px] md:pt-[120px] w-[100vw] min-h-[100vh]"
     >
-      <div className="text-center bg-black text-white mb-[30px]">
+      <div className="w-[100vw] fixed text-center bg-black text-white z-50">
         Swipe left or right
       </div>
       <AnimatePresence mode="wait">
@@ -58,7 +60,7 @@ const Menu = () => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -direction * 50 }}
           transition={{ duration: 0.3 }}
-          className="w-full"
+          className="w-full mt-[30px]"
         >
           {pages[current]}
         </motion.div>
