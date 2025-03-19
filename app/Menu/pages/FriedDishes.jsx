@@ -41,7 +41,26 @@ const FriedDishes = () => {
         src="/menu_images/fried_dishes/layer_3.webp"
         width={1000}
         height={1000}
-        className="w-[100vw] px-[6vw] mb-[20px]"
+        className="w-[100vw] px-[6vw] mb-[40px]"
+      />
+      {/* Tempura 🍤 */}
+      <Image
+        src="/menu_images/fried_dishes/tempura_title.webp"
+        width={1000}
+        height={1000}
+        className="w-[40vw] mb-[50px]"
+      />
+      <Image
+        src="/menu_images/fried_dishes/tempura_content.webp"
+        width={1000}
+        height={1000}
+        className="w-[100vw] px-[8vw] mb-[40px]"
+      />
+      <Image
+        src="/menu_images/fried_dishes/tempura_image.webp"
+        width={1000}
+        height={1000}
+        className="w-[100vw] px-[18vw] mb-[40px]"
       />
     </div>
   );
