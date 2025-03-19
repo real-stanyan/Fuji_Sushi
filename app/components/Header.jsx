@@ -20,34 +20,16 @@ import { useState, useEffect } from "react"; // Import useState and useEffect
 const Header = () => {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(false); // State to manage Drawer
-  const [headerBg, setHeaderBg] = useState("transparent"); // State to manage Header background color
 
   const toggleDrawer = () => setIsOpen(!isOpen);
   const closeDrawer = () => setIsOpen(false); // Function to close Drawer
 
   // Effect to handle background color change on scroll
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setHeaderBg("#000"); // Change to red after scrolling down
-      } else {
-        setHeaderBg("transparent"); // Default background color
-      }
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   return (
     <div
-      className={`fixed top-0 left-0 grid w-full h-[90px] md:h-[120px] text-white z-50 px-4`}
+      className={`fixed top-0 left-0 grid w-full h-[90px] md:h-[120px] bg-black text-white z-50 px-4`}
       style={{
-        backgroundColor: headerBg, // Apply dynamic background color
-        transition: "background-color 0.3s ease", // Add transition effect
         gridTemplateColumns: "1fr auto 1fr", // 定义三列布局
       }}
     >
