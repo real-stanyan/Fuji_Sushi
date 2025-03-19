@@ -8,7 +8,7 @@ const Salad = () => {
         src="/menu_title/salad.webp"
         width={1000}
         height={1000}
-        className="w-[70vw] mb-[40px]"
+        className="w-[60vw] mb-[40px]"
       />
       {/* Green Seaweed Salad */}
       <Image

@@ -8,7 +8,7 @@ const Noodle = () => {
         src="/menu_title/noodle.webp"
         width={1000}
         height={1000}
-        className="w-[70vw] mb-[40px] ml-[10px]"
+        className="w-[70vw] mb-[40px] ml-[15vw]"
       />
       {/* layer 1 */}
       <Image
