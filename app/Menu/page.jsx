@@ -13,6 +13,7 @@ import Salad from "./pages/Salad";
 import MainDishes from "./pages/MainDishes";
 import Noodle from "./pages/Noodle";
 import DrinkMenu from "./pages/DrinkMenu";
+import SakeMenu from "./pages/SakeMenu";
 
 const Menu = () => {
   const pages = [
@@ -26,6 +27,7 @@ const Menu = () => {
     <MainDishes key="mainDishes" />,
     <Noodle key="noodle" />,
     <DrinkMenu key="drinkMenu" />,
+    <SakeMenu key="sakeMenu" />,
   ];
 
   const [current, setCurrent] = useState(0);
