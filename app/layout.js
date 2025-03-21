@@ -1,5 +1,6 @@
 import { Josefin_Sans } from "next/font/google";
 import { Bebas_Neue } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const JosefinSans = Josefin_Sans({
@@ -25,6 +26,20 @@ import FuncBtn from "./components/FuncBtn";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-4GZVQH8F44"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4GZVQH8F44');
+          `}
+        </Script>
+      </head>
       <body className={`${JosefinSans.variable} ${BebasNeue.variable}`}>
         <Header />
         <FuncBtn />
