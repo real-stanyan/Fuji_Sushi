@@ -3,7 +3,6 @@ import * as React from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
-import TimePicker from "@/components/ui/TimePicker";
 import emailjs from "emailjs-com";
 import {
   Select,
@@ -19,13 +18,20 @@ export default function Booking() {
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
   const [people, setPeople] = React.useState("");
+  const [loading, setLoading] = React.useState(false);
 
-  // 使用 useMemo 生成格式化后的日期字符串 "x月x日"
   const formattedDate = React.useMemo(() => {
     return `${date.getMonth() + 1}月${date.getDate()}日`;
   }, [date]);
 
   const handleSubmit = async () => {
+    if (!name || !email || !people || !time) {
+      alert("Please fill out the form.");
+      return;
+    }
+
+    setLoading(true);
+
     const templateParams = {
       name,
       email,
@@ -44,6 +50,8 @@ export default function Booking() {
       alert("Booking email sent!");
     } catch (error) {
       alert("Failed to send booking email.");
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -61,6 +69,7 @@ export default function Booking() {
       <div className="text-white px-[10vw] space-y-2 w-full">
         <h1>Your Email:</h1>
         <Input
+          type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="text-black"
@@ -78,7 +87,7 @@ export default function Booking() {
       <div className="text-white px-[10vw] space-y-2 w-full">
         <h1>When?</h1>
         <Select onValueChange={setTime}>
-          <SelectTrigger className="w-full">
+          <SelectTrigger className="w-full text-black">
             <SelectValue placeholder="Select Time" />
           </SelectTrigger>
           <SelectContent>
@@ -112,8 +121,13 @@ export default function Booking() {
         className="rounded-md border shadow text-white w-[70%] mx-auto flex justify-evenly"
       />
 
-      <Button variant="outline" className="w-[50vw]" onClick={handleSubmit}>
-        Submit
+      <Button
+        variant="outline"
+        className="w-[50vw]"
+        onClick={handleSubmit}
+        disabled={loading}
+      >
+        {loading ? "Loading..." : "Submit"}
       </Button>
     </div>
   );
