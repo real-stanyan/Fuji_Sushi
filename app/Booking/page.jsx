@@ -3,6 +3,7 @@ import * as React from "react";
 import { Calendar } from "@/components/ui/calendar";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
 import emailjs from "emailjs-com";
 import {
   Select,
@@ -13,17 +14,18 @@ import {
 } from "@/components/ui/select";
 
 export default function Booking() {
-  const [date, setDate] = React.useState(new Date());
+  const [date, setDate] = React.useState("");
   const [time, setTime] = React.useState("");
   const [name, setName] = React.useState("");
   const [email, setEmail] = React.useState("");
+  const [message, setMessage] = React.useState("");
   const [people, setPeople] = React.useState("");
   const [loading, setLoading] = React.useState(false);
 
   const formattedDate = date ? date.toISOString().split("T")[0] : "";
 
   const handleSubmit = async () => {
-    if (!name || !email || !people || !time) {
+    if (!name || !email || !people || !time || !date) {
       alert("Please fill out the form.");
       return;
     }
@@ -35,6 +37,7 @@ export default function Booking() {
       email,
       people,
       time,
+      message,
       formattedDate,
     };
 
@@ -56,32 +59,49 @@ export default function Booking() {
   return (
     <div className="flex flex-col items-center bg-black w-[100vw] min-h-[100vh] pt-[90px] md:pt-[120px] space-y-4 pb-[40px]">
       <h1 className="text-white font-pwc text-4xl my-4">Make a booking</h1>
+      {/* Name */}
       <div className="text-white px-[10vw] space-y-2 w-full">
         <h1>Your Name:</h1>
         <Input
           value={name}
           onChange={(e) => setName(e.target.value)}
+          placeholder="Enter your name"
           className="text-black"
         />
       </div>
+      {/* Email */}
       <div className="text-white px-[10vw] space-y-2 w-full">
         <h1>Your Email:</h1>
         <Input
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          placeholder="Enter your Email"
           className="text-black"
         />
       </div>
+      {/* People */}
       <div className="text-white px-[10vw] space-y-2 w-full">
         <h1>How Many People?</h1>
         <Input
           type="number"
           value={people}
           onChange={(e) => setPeople(e.target.value)}
+          placeholder="Enter the number of people"
           className="text-black"
         />
       </div>
+      {/* Message */}
+      <div className="text-white px-[10vw] space-y-2 w-full">
+        <h1>Message:</h1>
+        <Textarea
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
+          placeholder="Leave your message here."
+          className="text-black"
+        />
+      </div>
+      {/* When */}
       <div className="text-white px-[10vw] space-y-2 w-full">
         <h1>When?</h1>
         <Select onValueChange={setTime}>
