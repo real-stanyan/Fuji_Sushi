@@ -20,9 +20,7 @@ export default function Booking() {
   const [people, setPeople] = React.useState("");
   const [loading, setLoading] = React.useState(false);
 
-  const formattedDate = React.useMemo(() => {
-    return `${date.getMonth() + 1}月${date.getDate()}日`;
-  }, [date]);
+  const formattedDate = date ? date.toISOString().split("T")[0] : "";
 
   const handleSubmit = async () => {
     if (!name || !email || !people || !time) {
@@ -37,7 +35,7 @@ export default function Booking() {
       email,
       people,
       time,
-      booking_date: formattedDate,
+      formattedDate,
     };
 
     try {
