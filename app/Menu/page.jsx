@@ -74,7 +74,7 @@ const Menu = () => {
           {MenuIcons.map((icons, index) => (
             <div
               key={icons.icon}
-              className={`w-[150px] gap-1 flex flex-col flex-shrink-0 justify-center items-center px-4 cursor-pointer ${
+              className={`w-[100px] gap-1 flex flex-col flex-shrink-0 justify-center items-center px-4 cursor-pointer ${
                 current === index
                   ? "border-2 border-white py-2 px-4 rounded-xl active-item"
                   : ""
@@ -86,9 +86,9 @@ const Menu = () => {
                 height={100}
                 src={icons.icon}
                 alt={icons.icon}
-                className="w-[50px] h-[50px]"
+                className="w-[30px] h-[30px]"
               />
-              <p className="uppercase whitespace-nowrap text-sm">
+              <p className="uppercase whitespace-nowrap text-xs">
                 {icons.type}
               </p>
             </div>
@@ -107,7 +107,7 @@ const Menu = () => {
 
       <div
         {...handlers}
-        className="bg-menu-bg object-cover pt-[170px] md:pt-[260px] w-[100vw] min-h-[100vh]"
+        className="bg-menu-bg object-cover pt-[140px] md:pt-[170px] w-[100vw] min-h-[100vh]"
       >
         <AnimatePresence mode="wait">
           <motion.div

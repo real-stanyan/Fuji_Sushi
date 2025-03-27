@@ -4,11 +4,11 @@
     "icon": "/menu_icons/sashimi.webp"
   },
   {
-    "type": "Nigiri Sushi",
+    "type": "Nigiri",
     "icon": "/menu_icons/nigiri.webp"
   },
   {
-    "type": "Fuji Rolls",
+    "type": "Combo",
     "icon": "/menu_icons/combo.webp"
   },
 
@@ -17,11 +17,11 @@
     "icon": "/menu_icons/sushi-roll.webp"
   },
   {
-    "type": "ENTREE",
+    "type": "Appetiser",
     "icon": "/menu_icons/corndog.webp"
   },
   {
-    "type": "ENTREE",
+    "type": "Fried Dishes",
     "icon": "/menu_icons/tempura.webp"
   },
   {
@@ -29,19 +29,19 @@
     "icon": "/menu_icons/salad.webp"
   },
   {
-    "type": "Lunch Bento",
+    "type": "Main Dishes",
     "icon": "/menu_icons/bento.webp"
   },
   {
-    "type": "Stir Fried Noodles",
+    "type": "Noodle",
     "icon": "/menu_icons/pad-thai.webp"
   },
   {
-    "type": "Highball Whisky",
+    "type": "Drink Menu",
     "icon": "/menu_icons/highball.webp"
   },
   {
-    "type": "Sake",
+    "type": "Sake MENU",
     "icon": "/menu_icons/sake.webp"
   }
 ]
