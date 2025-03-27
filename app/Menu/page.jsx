@@ -70,11 +70,11 @@ const Menu = () => {
         ref={containerRef}
         className="max-h-[400px] fixed z-40 w-full overflow-x-auto overflow-y-hidden pt-[90px] md:pt-[120px] bg-black hide-scrollbar"
       >
-        <div className="flex items-center text-white py-2 px-4">
+        <div className="flex items-center text-white py-2 px-2">
           {MenuIcons.map((icons, index) => (
             <div
               key={icons.icon}
-              className={`gap-1 flex flex-col flex-shrink-0 justify-center items-center px-4 cursor-pointer ${
+              className={`w-[150px] gap-1 flex flex-col flex-shrink-0 justify-center items-center px-4 cursor-pointer ${
                 current === index
                   ? "border-2 border-white py-2 px-4 rounded-xl active-item"
                   : ""
@@ -88,7 +88,9 @@ const Menu = () => {
                 alt={icons.icon}
                 className="w-[50px] h-[50px]"
               />
-              <p>{icons.type}</p>
+              <p className="uppercase whitespace-nowrap text-sm">
+                {icons.type}
+              </p>
             </div>
           ))}
         </div>
@@ -105,7 +107,7 @@ const Menu = () => {
 
       <div
         {...handlers}
-        className="bg-menu-bg object-cover pt-[200px] md:pt-[260px] w-[100vw] min-h-[100vh]"
+        className="bg-menu-bg object-cover pt-[170px] md:pt-[260px] w-[100vw] min-h-[100vh]"
       >
         <AnimatePresence mode="wait">
           <motion.div

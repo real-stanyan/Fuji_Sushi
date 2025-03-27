@@ -1,47 +1,47 @@
 [
   {
     "type": "Sashimi",
-    "icon": "/menu_icons/sashimi.png"
+    "icon": "/menu_icons/sashimi.webp"
   },
   {
     "type": "Nigiri Sushi",
-    "icon": "/menu_icons/nigiri.png"
+    "icon": "/menu_icons/nigiri.webp"
   },
   {
     "type": "Fuji Rolls",
-    "icon": "/menu_icons/combo.png"
+    "icon": "/menu_icons/combo.webp"
   },
 
   {
     "type": "Fuji Rolls",
-    "icon": "/menu_icons/sushi-roll.png"
+    "icon": "/menu_icons/sushi-roll.webp"
   },
   {
     "type": "ENTREE",
-    "icon": "/menu_icons/corndog.png"
+    "icon": "/menu_icons/corndog.webp"
   },
   {
     "type": "ENTREE",
-    "icon": "/menu_icons/tempura.png"
+    "icon": "/menu_icons/tempura.webp"
   },
   {
     "type": "Salad",
-    "icon": "/menu_icons/salad.png"
+    "icon": "/menu_icons/salad.webp"
   },
   {
     "type": "Lunch Bento",
-    "icon": "/menu_icons/bento.png"
+    "icon": "/menu_icons/bento.webp"
   },
   {
     "type": "Stir Fried Noodles",
-    "icon": "/menu_icons/pad-thai.png"
+    "icon": "/menu_icons/pad-thai.webp"
   },
   {
     "type": "Highball Whisky",
-    "icon": "/menu_icons/highball.png"
+    "icon": "/menu_icons/highball.webp"
   },
   {
     "type": "Sake",
-    "icon": "/menu_icons/sake.png"
+    "icon": "/menu_icons/sake.webp"
   }
 ]
