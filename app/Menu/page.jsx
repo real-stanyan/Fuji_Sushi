@@ -107,7 +107,7 @@ const Menu = () => {
 
       <div
         {...handlers}
-        className="bg-menu-bg object-cover pt-[140px] md:pt-[170px] w-[100vw] min-h-[100vh]"
+        className="bg-menu-bg object-cover pt-[150px] md:pt-[170px] w-[100vw] min-h-[100vh]"
       >
         <AnimatePresence mode="wait">
           <motion.div

@@ -80,15 +80,6 @@ const Header = () => {
               主页 / HOME
             </Link>
             <Link
-              href="/WhatsOn"
-              className={`nav_link ${
-                pathname === "/WhatsOn" && "bg-[#94a3b8]"
-              }`}
-              onClick={closeDrawer} // Close drawer on link click
-            >
-              私たちについて / What&apos;s on
-            </Link>
-            <Link
               href="/Menu"
               className={`nav_link ${pathname === "/Menu" && "bg-[#94a3b8]"}`}
               onClick={closeDrawer} // Close drawer on link click
