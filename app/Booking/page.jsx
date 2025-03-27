@@ -63,9 +63,9 @@ export default function Booking() {
   return (
     <div className="flex flex-col items-center bg-black w-[100vw] min-h-[100vh] pt-[90px] md:pt-[120px] space-y-4 pb-[40px]">
       <h1 className="text-white font-pwc text-4xl my-4">Make a Booking</h1>
-      <div className="text-white">
+      {/* <div className="text-white">
         <h1>date: {formattedDate}</h1>
-      </div>
+      </div> */}
       {/* Name */}
       <div className="text-white px-[10vw] space-y-2 w-full">
         <h1>Your Name:</h1>
