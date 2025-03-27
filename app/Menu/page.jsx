@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useSwipeable } from "react-swipeable";
 import { motion, AnimatePresence } from "framer-motion";
 import Sashimi from "./pages/Sashimi";
@@ -14,6 +14,8 @@ import MainDishes from "./pages/MainDishes";
 import Noodle from "./pages/Noodle";
 import DrinkMenu from "./pages/DrinkMenu";
 import SakeMenu from "./pages/SakeMenu";
+import MenuIcons from "@/data/menu_data.json";
+import Image from "next/image";
 
 const Menu = () => {
   const pages = [
@@ -32,6 +34,7 @@ const Menu = () => {
 
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
+  const containerRef = useRef(null);
 
   const handlers = useSwipeable({
     onSwipedLeft: () => {
@@ -42,32 +45,82 @@ const Menu = () => {
       setDirection(-1);
       setCurrent((prev) => (prev - 1 + pages.length) % pages.length);
     },
-    delta: 50, // 调整滑动阈值
+    delta: 50,
     preventDefaultTouchmoveEvent: true,
     trackMouse: true,
   });
 
+  useEffect(() => {
+    const container = containerRef.current;
+    const activeItem = container.querySelector(".active-item");
+    if (activeItem) {
+      const containerWidth = container.offsetWidth;
+      const itemLeft = activeItem.offsetLeft;
+      const itemWidth = activeItem.offsetWidth;
+      container.scrollTo({
+        left: itemLeft - containerWidth / 2 + itemWidth / 2,
+        behavior: "smooth",
+      });
+    }
+  }, [current]);
+
   return (
-    <div
-      {...handlers}
-      className="bg-menu-bg object-cover pt-[90px] md:pt-[120px] w-[100vw] min-h-[100vh]"
-    >
-      <div className="w-[100vw] fixed text-center bg-black text-white z-50">
-        Swipe left or right
+    <>
+      <div
+        ref={containerRef}
+        className="max-h-[400px] fixed z-40 w-full overflow-x-auto overflow-y-hidden pt-[90px] md:pt-[120px] bg-black hide-scrollbar"
+      >
+        <div className="flex items-center text-white py-2 px-4">
+          {MenuIcons.map((icons, index) => (
+            <div
+              key={icons.icon}
+              className={`gap-1 flex flex-col flex-shrink-0 justify-center items-center px-4 cursor-pointer ${
+                current === index
+                  ? "border-2 border-white py-2 px-4 rounded-xl active-item"
+                  : ""
+              }`}
+              onClick={() => setCurrent(index)}
+            >
+              <Image
+                width={100}
+                height={100}
+                src={icons.icon}
+                alt={icons.icon}
+                className="w-[50px] h-[50px]"
+              />
+              <p>{icons.type}</p>
+            </div>
+          ))}
+        </div>
+        <style jsx>{`
+          .hide-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+          }
+          .hide-scrollbar::-webkit-scrollbar {
+            display: none;
+          }
+        `}</style>
       </div>
-      <AnimatePresence mode="wait">
-        <motion.div
-          key={current}
-          initial={{ opacity: 0, x: direction * 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -direction * 50 }}
-          transition={{ duration: 0.3 }}
-          className="w-full mt-[30px]"
-        >
-          {pages[current]}
-        </motion.div>
-      </AnimatePresence>
-    </div>
+
+      <div
+        {...handlers}
+        className="bg-menu-bg object-cover pt-[200px] md:pt-[260px] w-[100vw] min-h-[100vh]"
+      >
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={current}
+            initial={{ opacity: 0, x: direction * 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -direction * 50 }}
+            transition={{ duration: 0.3 }}
+            className="w-full mt-[30px]"
+          >
+            {pages[current]}
+          </motion.div>
+        </AnimatePresence>
+      </div>
+    </>
   );
 };
 
