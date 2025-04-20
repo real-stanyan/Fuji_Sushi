@@ -87,7 +87,7 @@ const Header = () => {
               メニュー / Menu
             </Link>
             <Link
-              href="/BookingFull"
+              href="/Booking"
               className={`nav_link ${
                 pathname === "/Booking" && "bg-[#94a3b8]"
               }`}
