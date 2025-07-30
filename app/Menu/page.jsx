@@ -15,10 +15,12 @@ import Noodle from "./pages/Noodle";
 import DrinkMenu from "./pages/DrinkMenu";
 import SakeMenu from "./pages/SakeMenu";
 import MenuIcons from "@/data/menu_data.json";
+import Special from "./pages/Special";
 import Image from "next/image";
 
 const Menu = () => {
   const pages = [
+    <Special key="special" />,
     <Sashimi key="sashimi" />,
     <Nigiri key="nigiri" />,
     <Combo key="combo" />,

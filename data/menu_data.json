@@ -1,5 +1,9 @@
 [
   {
+    "type": "Special",
+    "icon": "/menu_icons/special.webp"
+  },
+  {
     "type": "Sashimi",
     "icon": "/menu_icons/sashimi.webp"
   },
