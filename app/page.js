@@ -2,6 +2,19 @@
 import Link from "next/link";
 import Image from "next/image";
 
+export const metadata = {
+  openGraph: {
+    images: [
+      {
+        url: "/graph.webp",
+        width: 1200,
+        height: 630,
+        alt: "",
+      },
+    ],
+  },
+};
+
 export default function Home() {
   return (
     <div className="bg-home-bg bg-cover object-left-top min-w-[100vw] min-h-[100vh] flex justify-center items-center overflow-x-hidden">
