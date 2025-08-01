@@ -16,6 +16,18 @@ const Special = () => {
         src="/menu_images/special/special_2.webp"
         width={1000}
         height={1000}
+        className="w-[100vw]"
+      />
+      <Image
+        src="/menu_images/special/special_3.webp"
+        width={1000}
+        height={1000}
+        className="w-[100vw]"
+      />
+      <Image
+        src="/menu_images/special/special_4.webp"
+        width={1000}
+        height={1000}
         className="w-[100vw] mb-[40px]"
       />
     </div>
