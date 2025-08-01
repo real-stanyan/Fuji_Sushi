@@ -30,6 +30,12 @@ const Special = () => {
         height={1000}
         className="w-[100vw] mb-[40px]"
       />
+      <Image
+        src="/menu_images/special/special_5.webp"
+        width={1000}
+        height={1000}
+        className="w-[100vw] mb-[40px]"
+      />
     </div>
   );
 };
