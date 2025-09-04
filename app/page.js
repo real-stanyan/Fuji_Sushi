@@ -33,7 +33,9 @@ export default function Home() {
           <Image src="/menu_icons/new.webp" width={40} height={40} />
         </Link>
         <Link href="/Booking">予約 / Booking</Link>
-        <Link href="https://bopple.app/fuji-sushi">ちゅうもん / Order</Link>
+        <Link href="https://bopple.app/fuji-sushi">
+          ちゅうもん / Order(Delivery&Pickup)
+        </Link>
       </div>
     </div>
   );
