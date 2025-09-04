@@ -30,48 +30,10 @@ export default function Home() {
             rounded-2xl border border-white/15 bg-black/40 backdrop-blur-md
             shadow-[0_10px_30px_rgba(0,0,0,0.45)]
             text-white
-            px-6 py-8
-            flex flex-col gap-4 md:gap-6
+            px-6 py-8 flex flex-col gap-10
           `}
           aria-label="Primary"
         >
-          <Link
-            href="https://bopple.app/fuji-sushi"
-            className={`
-            relative flex flex-col items-center gap-3
-            rounded-xl px-5 py-2
-            font-JosefinSans text-2xl md:text-4xl font-bold
-            bg-[#5b53ff] hover:brightness-110 active:brightness-95
-            shadow-lg shadow-[#5b53ff]/30
-            focus-visible:outline-none focus-visible:ring-2
-            focus-visible:ring-white/80 transition
-          `}
-            aria-label="Order on Bopple"
-          >
-            {/* 折扣提示 */}
-            <div
-              className={`
-            absolute -top-6 text-sm md:text-base font-semibold
-            bg-yellow-400 text-black px-3 py-1 rounded-full
-            shadow-md animate-bounce
-          `}
-            >
-              Welcome Gift 🎉 Use code{" "}
-              <span className="font-bold">FIRST8OFF</span>
-            </div>
-
-            <div className="flex items-center gap-4">
-              <Image
-                src="/bopple_logo.webp"
-                width={200}
-                height={200}
-                alt="Bopple"
-                className="w-16 h-16 md:w-20 md:h-20 object-contain"
-                sizes="(max-width: 768px) 64px, 80px"
-              />
-              <h1 className="pr-2 md:pr-4">Order (Deliver / Pickup)</h1>
-            </div>
-          </Link>
           <Link
             href="/Menu"
             className={`
@@ -109,6 +71,47 @@ export default function Home() {
             aria-label="Booking"
           >
             予約 / Booking
+          </Link>
+
+          <Link
+            href="https://bopple.app/fuji-sushi"
+            className={`
+            relative flex flex-col items-center gap-3
+            rounded-xl px-5 py-2
+            font-JosefinSans text-2xl md:text-4xl font-bold
+            bg-black hover:brightness-110 active:brightness-95
+            shadow-lg shadow-[#c3201e]/30
+            focus-visible:outline-none focus-visible:ring-2
+            focus-visible:ring-white/80 transition
+          `}
+            aria-label="Order on Bopple"
+          >
+            {/* 折扣提示 */}
+            <div
+              className={`
+            absolute -top-6 text-sm md:text-base font-semibold
+            bg-yellow-400 text-black px-3 py-1 rounded-full
+            shadow-md animate-bounce
+          `}
+            >
+              Welcome Gift 🎉 Use code{" "}
+              <span className="font-bold">FIRST8OFF</span>
+            </div>
+
+            <div className="flex items-center gap-4">
+              <Image
+                src="/images/logo.png"
+                width={200}
+                height={200}
+                alt="Bopple"
+                className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                sizes="(max-width: 768px) 64px, 80px"
+              />
+              <h1 className="text-center pr-2 md:pr-4">
+                Order <br className="md:hidden" />
+                (Deliver / Pickup)
+              </h1>
+            </div>
           </Link>
         </nav>
       </div>
