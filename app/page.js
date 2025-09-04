@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div
       className={`
-        bg-[url('/bgImage/home_bg.webp')] lg:bg-[url('/bgImages/home_bg_PC.webp')] bg-cover object-left-top min-w-[100vw] min-h-[100vh] flex justify-center items-center overflow-x-hidden
+        bg-home-bg lg:bg-[url('/bgImages/home_bg_PC.webp')] bg-cover object-left-top min-w-[100vw] min-h-[100vh] flex justify-center items-center overflow-x-hidden
         `}
     >
       <div
@@ -33,8 +33,10 @@ export default function Home() {
           <Image src="/menu_icons/new.webp" width={40} height={40} />
         </Link>
         <Link href="/Booking">予約 / Booking</Link>
-        <Link href="https://bopple.app/fuji-sushi">
-          ちゅうもん / Order(Delivery&Pickup)
+        <Link href="https://bopple.app/fuji-sushi" className="text-center">
+          Order
+          <br />
+          <span className="tracking-wider">(Delivery&Pickup)</span>
         </Link>
       </div>
     </div>
