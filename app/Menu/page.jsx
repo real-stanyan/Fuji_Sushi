@@ -16,6 +16,7 @@ import DrinkMenu from "./pages/DrinkMenu";
 import SakeMenu from "./pages/SakeMenu";
 import MenuIcons from "@/data/menu_data.json";
 import Special from "./pages/Special";
+import Beer from "./pages/Beer";
 import Image from "next/image";
 
 const Menu = () => {
@@ -32,6 +33,7 @@ const Menu = () => {
     <Noodle key="noodle" />,
     <DrinkMenu key="drinkMenu" />,
     <SakeMenu key="sakeMenu" />,
+    <Beer key="beerMenu" />,
   ];
 
   const [current, setCurrent] = useState(0);

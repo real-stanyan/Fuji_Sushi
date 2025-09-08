@@ -47,5 +47,9 @@
   {
     "type": "Sake MENU",
     "icon": "/menu_icons/sake.webp"
+  },
+  {
+    "type": "Beer MENU",
+    "icon": "/menu_icons/beer.webp"
   }
 ]
