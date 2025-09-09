@@ -12,25 +12,30 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div
-      className={`
-        relative w-full min-h-screen overflow-x-hidden
-        bg-home-bg bg-cover bg-center
-        lg:bg-[url('/bgImages/home_bg_PC.webp')] lg:bg-left-top
-      `}
-    >
+    <div className="relative w-full min-h-screen overflow-x-hidden">
+      {/* bg video */}
+      <video
+        className="absolute inset-0 w-full h-full object-cover"
+        autoPlay
+        loop
+        muted
+        playsInline
+      >
+        <source src="/bgImages/bg_video.mp4" type="video/mp4" />
+      </video>
+
       {/* overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30" />
 
       {/* content */}
-      <div className="relative z-10 flex min-h-screen items-center justify-center p-4">
+      <div className="relative z-10 flex min-h-screen items-end justify-center p-4">
         <nav
           className={`
             font-pwc w-full max-w-[680px]
             rounded-2xl border border-white/15 bg-black/40 backdrop-blur-md
             shadow-[0_10px_30px_rgba(0,0,0,0.45)]
             text-white
-            px-6 py-8 flex flex-col gap-10
+            px-6 py-8 flex flex-col gap-8
           `}
           aria-label="Primary"
         >
@@ -76,23 +81,23 @@ export default function Home() {
           <Link
             href="https://bopple.app/fuji-sushi"
             className={`
-            relative flex flex-col items-center gap-3
-            rounded-xl px-5 py-2
-            font-JosefinSans text-2xl md:text-4xl font-bold
-            bg-black hover:brightness-110 active:brightness-95
-            shadow-lg shadow-[#c3201e]/30
-            focus-visible:outline-none focus-visible:ring-2
-            focus-visible:ring-white/80 transition
-          `}
+              relative flex flex-col items-center gap-3
+              rounded-xl px-5 py-2
+              font-JosefinSans text-2xl md:text-4xl font-bold
+              bg-black hover:brightness-110 active:brightness-95
+              shadow-lg shadow-[#c3201e]/30
+              focus-visible:outline-none focus-visible:ring-2
+              focus-visible:ring-white/80 transition
+            `}
             aria-label="Order on Bopple"
           >
             {/* 折扣提示 */}
             <div
               className={`
-            absolute -top-6 text-sm md:text-base font-semibold
-            bg-yellow-400 text-black px-3 py-1 rounded-full
-            shadow-md animate-bounce
-          `}
+                absolute -top-6 text-sm md:text-base font-semibold
+                bg-yellow-400 text-black px-3 py-1 rounded-full
+                shadow-md animate-bounce
+              `}
             >
               Welcome Gift 🎉 Use code{" "}
               <span className="font-bold">FIRST8OFF</span>

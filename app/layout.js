@@ -43,7 +43,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className={`${JosefinSans.variable} ${BebasNeue.variable}`}>
         <Header />
-        <FuncBtn />
+        {/* <FuncBtn /> */}
         {children}
       </body>
     </html>
