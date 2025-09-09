@@ -40,55 +40,16 @@ export default function Home() {
             rounded-2xl border border-white/15 bg-black/40 backdrop-blur-md
             shadow-[0_10px_30px_rgba(0,0,0,0.45)]
             text-white
-            px-6 py-8 flex flex-col gap-8
+            px-6 py-6 flex flex-col gap-4
           `}
           aria-label="Primary"
         >
-          <Link
-            href="/Menu"
-            className={`
-              group inline-flex items-center justify-center gap-3
-              rounded-xl px-4 py-3
-              text-2xl md:text-4xl font-bold
-              ring-1 ring-white/10 hover:ring-white/25
-              transition
-              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5b53ff]
-            `}
-            aria-label="View Menu"
-          >
-            <span>メニュー / Menu</span>
-            <Image
-              src="/menu_icons/new.webp"
-              width={40}
-              height={40}
-              alt="New"
-              className="h-8 w-8 md:h-10 md:w-10 shrink-0"
-              sizes="(max-width: 768px) 40px, 48px"
-            />
-          </Link>
-
-          <Link
-            href="/Booking"
-            className={`
-              inline-flex items-center justify-center
-              rounded-xl px-4 py-3
-              text-2xl md:text-4xl font-bold
-              ring-1 ring-white/10 hover:ring-white/25
-              transition
-              hover:bg-white/5
-              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5b53ff]
-            `}
-            aria-label="Booking"
-          >
-            予約 / Booking
-          </Link>
-
           <Link
             href="https://bopple.app/fuji-sushi"
             className={`
               relative flex flex-col items-center gap-3
               rounded-xl px-5 py-2
-              font-JosefinSans text-2xl md:text-4xl font-bold
+              font-JosefinSans text-xl md:text-3xl font-bold
               bg-black hover:brightness-110 active:brightness-95
               shadow-lg shadow-[#c3201e]/30
               focus-visible:outline-none focus-visible:ring-2
@@ -114,7 +75,7 @@ export default function Home() {
                 width={200}
                 height={200}
                 alt="Bopple"
-                className="w-16 h-16 md:w-20 md:h-20 object-contain"
+                className="w-12 h-12 md:w-15 md:h-15 object-contain"
                 sizes="(max-width: 768px) 64px, 80px"
               />
               <h1 className="text-center pr-2 md:pr-4">
@@ -122,6 +83,44 @@ export default function Home() {
                 (Deliver / Pickup)
               </h1>
             </div>
+          </Link>
+          <Link
+            href="/Menu"
+            className={`
+              group inline-flex items-center justify-center gap-3
+              rounded-xl px-4 py-3
+              text-xl md:text-3xl font-bold
+              ring-1 ring-white/10 hover:ring-white/25
+              transition
+              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5b53ff]
+            `}
+            aria-label="View Menu"
+          >
+            <span>メニュー / Menu</span>
+            <Image
+              src="/menu_icons/new.webp"
+              width={40}
+              height={40}
+              alt="New"
+              className="h-8 w-8 md:h-10 md:w-10 shrink-0"
+              sizes="(max-width: 768px) 40px, 48px"
+            />
+          </Link>
+
+          <Link
+            href="/Booking"
+            className={`
+              inline-flex items-center justify-center
+              rounded-xl px-4 py-3
+              text-xl md:text-3xl font-bold
+              ring-1 ring-white/10 hover:ring-white/25
+              transition
+              hover:bg-white/5
+              focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#5b53ff]
+            `}
+            aria-label="Booking"
+          >
+            予約 / Booking
           </Link>
         </nav>
       </div>
