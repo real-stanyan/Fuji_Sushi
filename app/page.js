@@ -12,7 +12,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="relative w-full min-h-screen overflow-x-hidden">
+    <div className="relative w-full min-h-[100svh] md:min-h-screen overflow-x-hidden">
       {/* bg video */}
       <video
         className="absolute inset-0 w-full h-full object-cover"
@@ -28,7 +28,12 @@ export default function Home() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/30" />
 
       {/* content */}
-      <div className="relative z-10 flex min-h-screen items-end justify-center p-4">
+      <div
+        className="
+          relative z-10 flex min-h-[inherit] items-end justify-center p-4
+          pb-[max(env(safe-area-inset-bottom),1rem)]
+        "
+      >
         <nav
           className={`
             font-pwc w-full max-w-[680px]
