@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/drawer";
 import { VisuallyHidden } from "@reach/visually-hidden";
 import { useState, useEffect } from "react"; // Import useState and useEffect
+import { Instagram, Facebook } from "lucide-react";
 
 const Header = () => {
   const pathname = usePathname();
@@ -95,6 +96,16 @@ const Header = () => {
             >
               予約 / Booking
             </Link>
+            <DrawerFooter className="w-full h-[100px] m-0 space-y-2">
+              <div className="flex h-full w-full justify-center items-center gap-8">
+                <Link href="https://www.instagram.com/fuji_sushi_surfers/?igsh=MXRuMnZvbHQ3emV2cA%3D%3D&utm_source=qr#">
+                  <Instagram size={35} />
+                </Link>
+                <Link href="https://www.facebook.com/profile.php?id=61580006815790&mibextid=wwXIfr&rdid=Nq7E8cBRDqzXXEyo&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F19dhbhiu2L%2F%3Fmibextid%3DwwXIfr#">
+                  <Facebook size={35} />
+                </Link>
+              </div>
+            </DrawerFooter>
           </DrawerContent>
         </Drawer>
       </div>
