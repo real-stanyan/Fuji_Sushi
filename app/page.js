@@ -108,7 +108,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/BookingFull"
+            href="/Booking"
             className={`
               inline-flex items-center justify-center
               rounded-xl px-4 py-3
