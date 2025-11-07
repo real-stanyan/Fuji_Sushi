@@ -8,6 +8,12 @@ const Nigiri = () => {
         src="/menu_images/nigiri/full.webp"
         width={1000}
         height={1000}
+        className="w-[100vw]"
+      />
+      <Image
+        src="/menu_images/nigiri/full_2.webp"
+        width={1000}
+        height={1000}
         className="w-[100vw] mb-[40px]"
       />
     </div>
